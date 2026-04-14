@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Docker Build & Push') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'd02bbcc0-346a-4ebc-ald8-669d0ff62elc', 
+                withCredentials([usernamePassword(credentialsId: 'd02bbcc0-346a-4ebc-a1d8-669d0ff62e1c', 
                                  passwordVariable: 'PASS', 
                                  usernameVariable: 'USER')]) {
                     sh "docker build -t ${DOCKER_USER}/${IMAGE_NAME}:latest ."
