@@ -7,7 +7,7 @@ services:
       - "3307:3306"
     environment:
       MYSQL_DATABASE: userdb
-      MYSQL_ROOT_PASSWORD: Nuvelabs123$
+      MYSQL_ROOT_PASSWORD: Root@123
     networks:
       - user-network
     volumes:
